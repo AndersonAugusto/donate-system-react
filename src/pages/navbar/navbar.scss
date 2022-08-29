@@ -1,0 +1,47 @@
+
+@import '../../variables.scss';
+
+header {
+
+    background-color: $principal-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    width: 100vw;
+
+    .logoImg {
+        margin-right: 50px;
+        text-align: center;
+        img {
+            width: 90px;
+        }
+    }
+    
+    ul {
+        color: $font-color-header;
+        display: flex;
+        font-size: $font-size-header;
+        font-weight: 700;
+        li {
+            margin-right: 10vw;
+            white-space: nowrap;
+        }
+    }
+
+    .person {
+        display: flex;
+        height: 100%;
+        .beltIcon {
+            margin-left: 24px;
+        }
+        .nameUser {
+            margin:  0 10px 0 20px;
+            width: auto;
+            font-size: $font-size-header;
+            color: $font-color-header;
+            font-weight: 600;
+        }
+    }
+
+}
