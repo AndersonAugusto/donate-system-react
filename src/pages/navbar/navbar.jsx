@@ -22,12 +22,11 @@ import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined
 
   return (
     <header>
-        
         <div className='logoImg'>
-            <img  src={ Logo } alt="logo" />
+            <img src={ Logo } alt="logo" width='90px' />
         </div>
         
-        <ul>
+        <ul className='list'>
             <li>Inicio</li>
             <li>Sobre nós</li>
             <li>Produtos</li>
@@ -46,7 +45,7 @@ import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined
                     aria-expanded={open ? 'true' : undefined}
                     onClick={handleClick}
                 >
-                    <AccountCircleOutlinedIcon sx={{ fontSize: 50 }} />
+                    <AccountCircleOutlinedIcon sx={{ fontSize: 50 , color: '#5A5A5A;'}} />
                 </Button>
                 <Menu
                     id="basic-menu"
