@@ -4,13 +4,16 @@ import './reset.css';
 import { BrowserRouter } from 'react-router-dom'
 
 import Routes from './routes'
-import Navbar from './pages/navbar/navbar'
+import Navbar from './components/navbar/navbar'
+
 
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar/>
+
+
+      {/* <Navbar/> */}
         <Routes />
     </BrowserRouter>
   );
