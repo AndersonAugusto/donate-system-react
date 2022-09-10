@@ -1,19 +1,18 @@
 import React , { useContext } from 'react'
-import { AuthContext } from '../../context/auth'
 import { useForm } from 'react-hook-form'
+import AuthContext  from '../../context/auth'
 import './login.scss'
-
-//COMPONENTS
 import styled from 'styled-components'
-
-//IMAGENS
 import Logo from '../../assets/img/logo.png'
 
-const Login = () => {
-    const { register, handleSubmit } = useForm();
-    const { login } = useContext(AuthContext)
 
-    //STYLED COMPONENT
+const Login = () => {
+
+    const login = useContext(AuthContext)
+    console.log(login)
+
+    const { register, handleSubmit } = useForm();
+
     const Button = styled.button `
         width: 80%;
         color: #fff;
@@ -27,8 +26,8 @@ const Login = () => {
             background-color: #376c59;
         }
     `
-
     async function handleLogin(email , password) {
+
         await login(email , password)
     }
 
