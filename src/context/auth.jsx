@@ -12,6 +12,7 @@ export function AuthProvider({ children }) {
     const [user , setUser] = useState(null)
     const isAuthenticated = !!user
 
+    
     const login = async ({email , password}) => { 
 
         const token = await Authentication( email , password )
